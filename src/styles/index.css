@@ -285,11 +285,11 @@ cursor: pointer;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  width: 125%; /* or max-width: none; if you want it to stretch fully */
+  width: 125%; 
 }
 
 .card.about img {
-  width: 100px; /* or any fixed size you want */
+  width: 100px;
   height: auto;
   border-radius: 8px;
   flex-shrink: 0;
