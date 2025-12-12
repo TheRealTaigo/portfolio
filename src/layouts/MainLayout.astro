@@ -1,0 +1,44 @@
+---
+import '../styles/index.css';
+import '../styles/projects.css';
+import '../styles/werkprocessen.css';
+import '../scripts/index.js';
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+  	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="/public/HunterLogoWhite.png">
+		<title>Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  	</head>
+  	<body>
+		<nav class="side-nav">
+		<a class="home" href="/">
+			<div class="logo"><img class="logo-white" src="/public/HunterLogoWhite.png" alt="logo"></div>
+		</a>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="projects">Projects</a></li>
+			<li><a href="werkprocessen">Werkprocessen</a></li>
+			<li><a href="about">About</a></li>
+		</ul>
+		<button id="theme-toggle" 
+				data-logo-dark="/logo-white.png" 
+				data-logo-black="/logo-black.png">
+			<span class="sun">☀️</span>
+			<span class="moon">🌙</span>
+		</button>
+		</nav>
+		<main>
+			<slot />
+		</main>
+		<script>
+			import '../scripts/index.js';
+		</script>
+  	</body>
+</html>
