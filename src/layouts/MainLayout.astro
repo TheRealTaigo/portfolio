@@ -3,6 +3,8 @@ import '../styles/index.css';
 import '../styles/projects.css';
 import '../styles/werkprocessen.css';
 import '../scripts/index.js';
+import { Image } from 'astro:assets';
+import HunterLogoWhite from '../assets/HunterLogoWhite.png';
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -19,7 +21,7 @@ import '../scripts/index.js';
   	<body>
 		<nav class="side-nav">
 		<a class="home" href="/">
-			<div class="logo"><img class="logo-white" src="/public/HunterLogoWhite.png" alt="logo"></div>
+			<div class="logo"><Image class="logo-white" src={HunterLogoWhite} alt="logo"></div>
 		</a>
 		<ul>
 			<li><a href="/">Home</a></li>
