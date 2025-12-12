@@ -3,6 +3,7 @@ import '../styles/layout.css';
 import '../scripts/index.js';
 import { Image } from 'astro:assets';
 import HunterLogoWhite from '../assets/HunterLogoWhite.png';
+import HunterLogoBlack from '../assets/HunterLogoBlack.png';
 ---
 <!doctype html>
 <html lang="en" data-theme="dark">
@@ -19,7 +20,10 @@ import HunterLogoWhite from '../assets/HunterLogoWhite.png';
   	<body>
 		<nav class="side-nav">
 		<a class="home" href="/">
-			<div class="logo"><Image class="logo-white" src={HunterLogoWhite} alt="logo"></div>
+			<div class="logo">
+				<Image class="logo-white" src={HunterLogoWhite} alt="" />
+				<Image class="logo-black" src={HunterLogoBlack} alt="" />
+			</div>
 		</a>
 		<ul>
 			<li><a href="/">Home</a></li>

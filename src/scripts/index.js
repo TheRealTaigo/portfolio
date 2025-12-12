@@ -17,15 +17,6 @@ if (typeof window !== 'undefined') {
         const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
         html.dataset.theme = next;
         w.localStorage.setItem('theme', next);
-
-    /* 3. swap logo */
-    const Image = w.document.querySelector('.side-nav .logo img');
-    if (Image) {
-    Image.src = next === 'dark' ? '/assets/HunterLogoWhite.png'
-                                :'/assets/HunterLogoBlack.png';
-    Image.classList.toggle('logo-black', next === 'light'); 
-    Image.classList.toggle('logo-white', next === 'dark');  
-    }
     });
   });
 }
