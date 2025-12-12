@@ -136,10 +136,6 @@ margin-right: 20%;
 
 .stack > * + * { margin-block-start: 0rem; }
 
-.stack h2{
-  margin-bottom: -8%;
-}
-
 .stack h2 a{
   font-family: "Roboto", sans-serif;
   color: #0066ff;
