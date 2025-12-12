@@ -19,12 +19,12 @@ if (typeof window !== 'undefined') {
         w.localStorage.setItem('theme', next);
 
     /* 3. swap logo */
-    const img = w.document.querySelector('.side-nav .logo img');
-    if (img) {
-    img.src = next === 'dark' ? '/public/HunterLogoWhite.png'
-                                :'/public/HunterLogoBlack.png';
-    img.classList.toggle('logo-black', next === 'light'); 
-    img.classList.toggle('logo-white', next === 'dark');  
+    const Image = w.document.querySelector('.side-nav .logo img');
+    if (Image) {
+    Image.src = next === 'dark' ? '/assets/HunterLogoWhite.png'
+                                :'/assets/HunterLogoBlack.png';
+    Image.classList.toggle('logo-black', next === 'light'); 
+    Image.classList.toggle('logo-white', next === 'dark');  
     }
     });
   });
