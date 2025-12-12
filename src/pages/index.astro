@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
+import LinkedIn from '../assets/LinkedIn.jpg';
 ---
 
 <MainLayout title="Main Page">
@@ -86,7 +88,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           <p>⚪19 jaar</p>
           <p>⚪Software developer</p>
           </div>
-          <img src="/public/Tygo Offermanns LinkedIn.jpg" alt="linkedin">
+          <Image src={LinkedIn} alt="linkedIn">
         </li>
       </ul>
     </section>
