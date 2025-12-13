@@ -2,6 +2,8 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import '../styles/werkprocessen.css';
 import TrelloDIONNE from '../assets/TrelloDIONNE.mp4';
+import BehoefteAnalyseDIONNE from '../assets/BehoefteAnalyseDIONNE.pdf'
+import ExtendedAbstractTygoOffermanns from '../assets/Extended_Abstract_Tygo_Offermanns.pdf'
 ---
 <MainLayout title="Werkprocessen">
     <section class="stack">
@@ -46,20 +48,18 @@ import TrelloDIONNE from '../assets/TrelloDIONNE.mp4';
         <h2>Werkproces 1: Eisen en wensen</h2>
         <h4>De eisen en wensen zijn verwerkt in de user stories.</h4>
         <p> Volledig: de set van de user stories is een volledige weerspiegeling van de eisen en wensen, naast de essentiële eisen zijn ook de details (het informatiekanaal, plaatsen van opmerkingen en algemene voorwaarden) verwerkt. Dit geldt ook voor de definition of done.</p>
+        <a href="https://trello.com/b/53vccI5v/zuyd-tygo-offermanns">⚪ Trello bord DI.ON.NE</a>
         <video class="werkprocess-media" src={TrelloDIONNE} controls></video>
         <h4>De user stories voldoen aan de criteria (wie, wat, waarom en realistisch).</h4>
         <p>Volledig: de user stories zijn op de juiste wijze geformuleerd en voorzien van prioritering en tijdsindicatie. De kandidaat heeft een helder beeld bij de user stories en kan de prioritering en tijdsindicatie onderbouwen en plaatsen in de planning.</p>
-        <iframe
-        src="/assets/BehoefteAnalyse.html"
-        class="werkprocess-iframe"
-        title="Behoefteanalyse"
-        ></iframe>
+        <iframe src={BehoefteAnalyseDIONNE} class="werkprocess-iframe" title="Behoefteanalyse"></iframe>
         <h4>Op basis van de user stories is een complete en realistische planning gemaakt</h4>
         <p>Volledig: er is een complete en realistische planning. De planning is compleet en realistisch ingeschat.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={ExtendedAbstractTygoOffermanns} class="werkprocess-iframe" title="Extended Abstract"></iframe>
         <h4>De voortgang is bewaakt en de juiste keuzes/afwegingen zijn gemaakt op basis van prioriteiten.</h4>
         <p>Volledig: er is een duidelijke voortgangsbewaking op basis van prioritering. In de planning en prioritering is er zichtbaar sprake van keuzes en afwegingen. Dit niet alleen in het ontwikkelteam, maar ook met de opdrachtgever.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <a href="https://trello.com/b/53vccI5v/zuyd-tygo-offermanns">⚪ Trello bord DI.ON.NE</a>
+        <a href="https://trello.com/b/FrTeiBs1/sign-laguage-applicatie">⚪ Trello bord Signlator</a>
     </template>
 
     <template id="wp-2">
