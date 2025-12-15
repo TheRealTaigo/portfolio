@@ -2,9 +2,8 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import '../styles/werkprocessen.css';
 import { Image } from 'astro:assets';
-import TrelloDIONNE from '../assets/TrelloDIONNE.mp4';
-import TrelloSignlator from '../assets/TrelloSignlator.mp4';
-import BehoefteAnalyseDIONNE from '../assets/BehoefteAnalyseDIONNE.pdf'
+
+import BehoefteAnalyseDIONNE from '../assets/Behoefte_Analyse_DIONNE.pdf'
 import ExtendedAbstractTygoOffermanns from '../assets/Extended_Abstract_Tygo_Offermanns.pdf'
 import StageLogboek from '../assets/StageLogboek.mp4';
 
@@ -25,10 +24,10 @@ import DIONNEPrivacy from '../assets/DIONNE_Privacy.png'
 
 
 
-import TestplanLOOI from '../assets/Testplan_en_testrapport_LOOI.pdf'
+import TestplanEnTestrapportLOOI from '../assets/Testplan_en_testrapport_LOOI.pdf'
 import TestcaseOpnameDIONNE from '../assets/Testcase_Opname_DIONNE.mp4'
 import TestcaseOpnameLOOI from '../assets/Testcase_Opname_LOOI.mp4'
-import TestplanDIONNE from '../assets/Testplan_en_testrapport_DIONNE.pdf'
+import TestplanEnTestrapportDIONNE from '../assets/Testplan_en_testrapport_DIONNE.pdf'
 
 
 import VerbetervoorstellenDIONNE from '../assets/Verbetervoorstellen_DIONNE.pdf'
@@ -45,6 +44,9 @@ import VerbetervoorstellenLOOI from '../assets/Verbetervoorstellen_LOOI.pdf'
 import WekelijksBegeleiderGesprek from '../assets/Wekelijks_Begeleider_Gesprek.mp4'
 import VoortgangGesprek from '../assets/Voortgang_Gesprek_met_Sem.mp4'
 
+
+import BiebProjectPresentatie from '../assets/BiebProjectPresentatie.mp4'
+import StageStandupPresentatie from '../assets/Stage_Opname_Tygo_Presentatie.mp4'
 
 ---
 <MainLayout title="Werkprocessen">
@@ -146,14 +148,14 @@ import VoortgangGesprek from '../assets/Voortgang_Gesprek_met_Sem.mp4'
         <h2>K1-W4: Testen</h2>
         <h4>De testcases in het testplan sluiten aan op de user stories en bevatten alle scenario's.</h4>
         <p> Volledig: er is een duidelijk testplan met daarin verschillende scenario’s die moeten wordengetest. De scenario’s zijn duidelijk gerelateerd aan de user stories. Ook de samenhang van de user stories worden in de applicatie getest.</p>
-        <iframe src={TestplanLOOI} class="werkprocess-iframe" title="Testplan LOOI"></iframe>
+        <iframe src={TestplanEnTestrapportLOOI} class="werkprocess-iframe" title="Testplan LOOI"></iframe>
         <h4>De stappen, het gewenste resultaat en testdata zijn benoemd. Niet alleen het hoofdscenario, maar ook alternatieve scenario's.</h4>
         <p>Volledig: er zijn testscenario’s, deze bevatten testdata en gewenste resultaten. Alternatieve paden zijn opgenomen in de scenario’s.</p>
         <video src={TestcaseOpnameDIONNE} class="werkprocess-media" controls></video>
         <video src={TestcaseOpnameLOOI} class="werkprocess-media" controls></video>
         <h4>Het testrapport bevat de juiste resultaten en conclusies.</h4>
         <p>Volledig: er is een testrapport met uitgebreide resultaten. Alle scenario’s hebben een resultaat en de conclusie geeft inzicht in de samenhang van de applicatie en het gebruik.</p>
-        <iframe src={TestplanDIONNE} class="werkprocess-iframe" title="Testplan DIONNE"></iframe>
+        <iframe src={TestplanEnTestrapportDIONNE} class="werkprocess-iframe" title="Testplan DIONNE"></iframe>
     </template>
 
     <template id="wp-5">
@@ -218,7 +220,10 @@ import VoortgangGesprek from '../assets/Voortgang_Gesprek_met_Sem.mp4'
         <h2>K2-W2: (deel)Oplevering</h2>
         <h4>De kandidaat presenteert een overtuigend, duidelijk, beargumenteerd verhaal, afgestemd op de doelgroep.</h4>
         <p>Volledig: de kandidaat heeft een overtuigend verhaal, waarin duidelijk wordt welke bijdrage is geleverd en op welke wijze deze bijdrage heeft geleid tot de totstandkoming van het product. De kandidaat kijkt goed rond en reageert op reacties van de doelgroep.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <video src={BiebProjectPresentatie} class="werkprocess-media" controls></video>
+        <p>Tygo presenteerd op 1:49</p>
+        <video src={StageStandupPresentatie} class="werkprocess-media" controls></video>
+        <p>Tygo presenteerd op 0:33</p>
         <h4>De kandidaat stelt gerichte vragen om te controleren of de betrokkenen goed geïnformeerd zijn over het opgeleverde werk.</h4>
         <p>Volledig: de boodschap is volledig helder en duidelijk overgekomen.</p>
         <img src="/images/wp1-1.jpg" alt="foto">
