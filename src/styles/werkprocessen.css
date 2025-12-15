@@ -202,12 +202,12 @@ list-style: none;
 
 .werkprocess-iframe {
   width: 100%;
-  max-width: 1200px;
-  height: 800px;
-  border: 1px solid #ccc;
+  height: 90vh;   
+  border: none;
   border-radius: 8px;
   margin-block: 2rem;
 }
+
 .close-btn {
   position: relative;
   top: 1rem;
