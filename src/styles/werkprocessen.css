@@ -188,6 +188,11 @@ list-style: none;
   margin-bottom: -1%;
 }
 
+.K1-W3-Commits {
+  max-width: 75%;
+  height: 50vh;
+}
+
 .K2-W2-presentatie {
   max-width: 50%;
   height: 50vh;
