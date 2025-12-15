@@ -14,6 +14,26 @@ import TechnischOntwerpLOOI from '../assets/Technisch_Ontwerp_DIONNE.pdf'
 import TechnischOntwerpDIONNE from '../assets/Technisch_Ontwerp_LOOI.pdf'
 import SnowworldPrivacy from '../assets/Snowworld_Privacy.png'
 import DIONNEPrivacy from '../assets/DIONNE_Privacy.png'
+
+
+
+import TestplanLOOI from '../assets/Testplan_en_testrapport_LOOI.pdf'
+import TestcaseOpnameDIONNE from '../assets/Testcase_Opname_DIONNE.mp4'
+import TestcaseOpnameLOOI from '../assets/Testcase_Opname_LOOI.mp4'
+import TestplanDIONNE from '../assets/Testplan_en_testrapport_DIONNE.pdf'
+
+
+import VerbetervoorstellenDIONNE from '../assets/Verbetervoorstellen_DIONNE.pdf'
+import VerbetervoorstelFinn from '../assets/Verbetervoorstel_Finn.png'
+import AntwoordFinn from '../assets/Antwoord_Finn.png'
+import VerbetervoorstelJeroen from '../assets/Verbetervoorstel_Jeroen.png'
+import AntwoordJeroen from '../assets/Antwoord_Jeroen.png'
+import AntwoordTygo from '../assets/Antwoord_Tygo.png'
+import VerbetervoorstelAukje from '../assets/Verbetervoorstel_Aukje.png'
+import AntwoordAukje from '../assets/Antwoord_Aukje.png'
+import VerbetervoorstellenLOOI from '../assets/Verbetervoorstellen_LOOI.pdf'
+
+
 ---
 <MainLayout title="Werkprocessen">
     <section class="stack">
@@ -117,26 +137,33 @@ import DIONNEPrivacy from '../assets/DIONNE_Privacy.png'
         <h2>Werkproces 4: Testen</h2>
         <h4>De testcases in het testplan sluiten aan op de user stories en bevatten alle scenario's.</h4>
         <p> Volledig: er is een duidelijk testplan met daarin verschillende scenario’s die moeten wordengetest. De scenario’s zijn duidelijk gerelateerd aan de user stories. Ook de samenhang van de user stories worden in de applicatie getest.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={TestplanLOOI} class="werkprocess-iframe" title="Testplan LOOI"></iframe>
         <h4>De stappen, het gewenste resultaat en testdata zijn benoemd. Niet alleen het hoofdscenario, maar ook alternatieve scenario's.</h4>
         <p>Volledig: er zijn testscenario’s, deze bevatten testdata en gewenste resultaten. Alternatieve paden zijn opgenomen in de scenario’s.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <video src={TestcaseOpnameDIONNE} class="werkprocess-media" controls></video>
+        <video src={TestcaseOpnameLOOI} class="werkprocess-media" controls></video>
         <h4>Het testrapport bevat de juiste resultaten en conclusies.</h4>
         <p>Volledig: er is een testrapport met uitgebreide resultaten. Alle scenario’s hebben een resultaat en de conclusie geeft inzicht in de samenhang van de applicatie en het gebruik.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={TestplanDIONNE} class="werkprocess-iframe" title="Testplan DIONNE"></iframe>
     </template>
 
     <template id="wp-5">
         <h2>Werkproces 5: Verbetervoorstellen</h2>
         <h4>De juiste verbetervoorstellen zijn gedaan vanuit het testen.</h4>
         <p>Volledig: er zijn verbetervoorstellen genoemd die ook een duidelijke relatie hebben met de resultaten van de test en de conclusie. De verbetervoorstellen hebben betrekking op de technische en/of functionele oplossingen die de samengestelde functionaliteit verbeteren.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={VerbetervoorstellenLOOI} class="werkprocess-iframe" title="Verbetervoorstel LOOI"></iframe>
         <h4>De juiste verbetervoorstellen zijn gedaan vanuit de oplevering.</h4>
         <p>Volledig: er zijn verbetervoorstellen gedaan die terug te voeren zijn naar de resultaten van de test en de conclusie en die de functionaliteit en het gebruik van de ontwikkelde software verbeteren. Er is een duidelijke relatie gelegd naar de opdracht en de user stories.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <Image src={VerbetervoorstelFinn} alt=""/>
+        <Image src={AntwoordFinn} alt=""/>
+        <Image src={VerbetervoorstelJeroen} alt=""/>
+        <Image src={AntwoordJeroen} alt=""/>
+        <Image src={AntwoordTygo} alt=""/>
+        <Image src={VerbetervoorstelAukje} alt=""/>
+        <Image src={AntwoordAukje} alt=""/>
         <h4>De juiste verbetervoorstellen zijn gedaan vanuit de reflectie.</h4>
         <p>Volledig: er zijn verbetervoorstellen gedaan die betrekking hebben op de doorlopen proces en de rol van het individu daarin. Er is een helder beeld geschetst van het proces en de rol van het individu daarin. Er zijn verbetervoorstellen gedaan die betrekking hebben op het doorlopen proces en de rol van het individu daarin.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={VerbetervoorstellenDIONNE} class="werkprocess-iframe" title="Verbetervoorstel DIONNE"></iframe>
     </template>
 
     <template id="wp-6">
