@@ -179,13 +179,23 @@ list-style: none;
   min-height: 150vh;  
 }
 
-.fullscreen-content h2{
+.fullscreen-content h2 {
   margin-top: -1.4%;
   margin-bottom: 5%;
 }
 
-.fullscreen-content h4{
+.fullscreen-content h4 {
   margin-bottom: -1%;
+}
+
+.K2-W2-presentatie {
+  max-width: 50%;
+  height: 50vh;
+}
+
+.K2-W2-artikel {
+  max-width: 30%;
+  height: 50vh;
 }
 
 .fullscreen-content img {

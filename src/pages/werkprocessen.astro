@@ -22,6 +22,7 @@ import DIONNEPrivacy from '../assets/DIONNE_Privacy.png'
 
 
 
+
 import TestplanLOOI from '../assets/Testplan_en_testrapport_LOOI.pdf'
 import TestcaseOpnameDIONNE from '../assets/Testcase_Opname_DIONNE.mp4'
 import TestcaseOpnameLOOI from '../assets/Testcase_Opname_LOOI.mp4'
@@ -45,6 +46,16 @@ import VoortgangGesprek from '../assets/Voortgang_Gesprek_met_Sem.mp4'
 
 import BiebProjectPresentatie from '../assets/BiebProjectPresentatie.mp4'
 import StageStandupPresentatie from '../assets/Stage_Opname_Tygo_Presentatie.mp4'
+import LOOIZIEDIT from '../assets/LOOI_ZieDit.jpg'
+import Taltech from '../assets/TalTech.jpg'
+import ADSAISignlator from '../assets/ADSAI_Signlator.jpg'
+
+
+import ReflectieverslagDIONNE from '../assets/Reflectieverslag_DIONNE.pdf'
+import ReflectieverslagLOOI from '../assets/Reflectieverslag_LOOI.pdf'
+import ReflectiemeetingMail from '../assets/ReflectiemeetingMail.png'
+import ReflectiemeetingBevestiging from '../assets/ReflectiemeetingBevestiging.png'
+
 
 ---
 <MainLayout title="Werkprocessen">
@@ -224,22 +235,24 @@ import StageStandupPresentatie from '../assets/Stage_Opname_Tygo_Presentatie.mp4
         <p>Tygo presenteerd op 0:33</p>
         <h4>De kandidaat stelt gerichte vragen om te controleren of de betrokkenen goed geïnformeerd zijn over het opgeleverde werk.</h4>
         <p>Volledig: de boodschap is volledig helder en duidelijk overgekomen.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
         <h4>De kandidaat reageert adequaat op feedback.</h4>
         <p>Volledig: de kandidaat reageert actief op feedback, door, waar nodig, wedervragen te stellen en plaatst deze in de juiste context.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <Image class="K2-W2-presentatie" src={LOOIZIEDIT} alt=""/>
+        <Image class="K2-W2-presentatie" src={Taltech} alt=""/>
+        <Image class="K2-W2-artikel" src={ADSAISignlator} alt=""/>
     </template>
 
     <template id="wp-8">
         <h2>K2-W3: Reflecteren</h2>
         <h4>De kandidaat benoemt zowel positieve als verbeterpunten van het proces van zowel eigen als teamprestaties.</h4>
         <p>Volledig: de kandidaat heeft duidelijke beelden bij het doorlopen proces. Hij/zij benoemtzowel positieve als verbeterpunten t.a.v. het proces. De kandidaat heeft een goed beeld van de eigen/teamprestatie en hoe deze elkaar hebben beïnvloed.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <iframe src={ReflectieverslagDIONNE} class="werkprocess-iframe" title="Reflectieverslag DIONNE"></iframe>
+        <iframe src={ReflectieverslagLOOI} class="werkprocess-iframe" title="Reflectieverslag LOOI"></iframe>
         <h4>De kandidaat reageert adequaat op de ontvangen feedback.</h4>
         <p>Volledig: de kandidaat reageert actief op feedback, door, waar nodig, wedervragen te stellen en plaatst deze in de juiste context.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
         <h4>De kandidaat heeft een actieve houding tijdens reflectiemeetings</h4>
         <p> Volledig: de kandidaat is actief aanwezig in reflectiemeetings. Brengt relevante onderwerpen in, waarbij de breedte van de opdracht/problemen worden gezien en de kandidaat stelt relevante vragen.</p>
-        <img src="/images/wp1-1.jpg" alt="foto">
+        <Image class="" src={ReflectiemeetingMail} alt=""/>
+        <Image class="" src={ReflectiemeetingBevestiging} alt=""/>
     </template>
 </MainLayout>
